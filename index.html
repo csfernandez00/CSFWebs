@@ -174,27 +174,21 @@
 
         <div class="contact-container">         
             <div class="contact-info"> 
-                <h3>Contact Info</h3>
-                <p> <i class="fas fa-envelope-open-text"> </i> info@csfwebs.com</p>
-                <p> <i class="fas fa-map-location"> </i> Buenos Aires,  Argentina</p>
-
-                <!-- <div class="redes">
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-whatsapp"></i></a>
-                </div> -->
+                <h3>Informacion de contacto</h3>
+                <div class="info">  
+                    <p> <i class="fas fa-envelope"> </i> info@csfwebs.com</p>
+                    <p> <i class="fas fa-map-location"> </i> Buenos Aires,  Argentina</p>
+                </div>
+        
+                <div class="redes">
+                    <a href="https://www.instagram.com/csfwebs/" class="fab fa-instagram"></a>
+                    <a href="https://wa.me/+541122548711" class="fab fa-whatsapp"></a>
+                </div>
 
             </div>
             <form name="contact" method="POST" data-netlify="true">
                 
-                <div>
-                    <label for="select">Paquete: <br>
-                        <select name="select-service" id="select-service">
-                            <option value="Basico">Basico</option>
-                            <option value="Intermedio" >Intermedio</option>
-                            <option value="Avanzado">Avanzado</option>
-                        </select>
-                    </label>
-                </div>
+    
                 <div>
                     <label>Tu informacion:
                         <input type="text" name="name" id="inp-mail" placeholder="Nombre">
@@ -206,8 +200,16 @@
                         <input type="email" name="email" id="inp-mail" placeholder="Email">
                     </label>
                 </div>
-                
-                <button class="btn" type="submit" name="submit">Solicitar</button>
+                <div class="sel">
+                    <label for="select">Paquete: <br>
+                        <select name="select-service" id="select-service">
+                            <option value="Basico">Basico</option>
+                            <option value="Intermedio" >Intermedio</option>
+                            <option value="Avanzado">Avanzado</option>
+                        </select>
+                    </label>
+                </div>
+                <button class="btn" type="submit" name="submit">Solicitar Info.</button>
             </form>
         </div>
 

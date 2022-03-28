@@ -585,6 +585,7 @@ body{
     justify-content: center;
     align-items: center;
     flex: .9 1;
+    border-radius: 1rem;
 }
 
 #contact .contact-container .contact-info{
@@ -596,29 +597,48 @@ body{
     display: flex;
     flex-direction: column;
     padding: 2rem 1rem;
+    border-radius:.5rem;
 }
 
 #contact .contact-container .contact-info h3{
     font-size: 1.5rem;
     color: #fff;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    flex: .15 1;
+}
+#contact .contact-container .contact-info .info{
+    flex: .7 1;
 }
 
-
-#contact .contact-container .contact-info p{
+#contact .contact-container .contact-info .info p{
     font-size: 1.4rem;
     color: #fff;
     text-align: left;
     padding: 1rem 0 1rem 3rem;
-    
 }
 
 
 #contact .contact-container .contact-info p i{
     font-size: 1.8rem;
     padding: 0 1rem 0 0 ;
+}
 
+#contact .contact-container .contact-info .redes{
+    flex: .15 1;
+    text-align: center;
+}
+
+#contact .contact-container .contact-info .redes a{
+    font-size: 3.4rem;
+    text-decoration: none;
+    padding: 1rem;
+    color: #fff;
+}
+
+#contact .contact-container .contact-info .redes a:hover{
+    transform: scale(1.1);
 }
 
 
@@ -653,10 +673,25 @@ body{
     outline: none;
     width: 80%;
     font-size: 1rem;
-    margin: 1.5rem 0 5rem;
+    margin: 1.5rem 0 0rem;
 
 }
 
+#contact .contact-container form .sel{
+    margin-top: 4rem;
+}
+#contact .contact-container form div label select option{    
+    font-size: 1rem;
+}
+
+#contact .contact-container form div select:hover{
+    background-color: var(--gr);  
+}
+
+#contact .contact-container form div label{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
 
 #contact .contact-container form div input{
     padding: .8rem  .2rem .3rem;
@@ -715,7 +750,8 @@ body{
     flex: .3 1;
     text-align: center;
     border-right: 1px solid #888 ;
-    height: 60%
+    height: 60%;
+    padding-top: .5rem;
 }
 
 
