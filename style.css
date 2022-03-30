@@ -569,6 +569,7 @@ body{
     flex-direction: column;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     justify-content: center;
     align-items: center;
     
@@ -608,11 +609,18 @@ body{
     margin-top: 2rem;
     flex: .15 1;
 }
-#contact .contact-container .contact-info .info{
-    flex: .7 1;
+
+#contact .contact-container .contact-info .info-cont{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem 0;
+}
+#contact .contact-container .contact-info  .info-cont .info{
+    flex: .9 1;
 }
 
-#contact .contact-container .contact-info .info p{
+#contact .contact-container .contact-info  .info-cont .info p{
     font-size: 1.4rem;
     color: #fff;
     text-align: left;
@@ -620,24 +628,24 @@ body{
 }
 
 
-#contact .contact-container .contact-info p i{
+#contact .contact-container .contact-info .info-cont  p i{
     font-size: 1.8rem;
     padding: 0 1rem 0 0 ;
 }
 
-#contact .contact-container .contact-info .redes{
+#contact .contact-container .contact-info  .info-cont .redes{
     flex: .15 1;
     text-align: center;
 }
 
-#contact .contact-container .contact-info .redes a{
+#contact .contact-container .contact-info  .info-cont .redes a{
     font-size: 3.4rem;
     text-decoration: none;
     padding: 1rem;
     color: #fff;
 }
 
-#contact .contact-container .contact-info .redes a:hover{
+#contact .contact-container .contact-info  .info-cont .redes a:hover{
     transform: scale(1.1);
 }
 
@@ -714,6 +722,7 @@ body{
     width: 40%;   
     padding: .5rem;
     margin: 5rem auto 0;
+    font-weight: bold;
 }
 
 
@@ -845,6 +854,23 @@ body{
     #services .row .title-cont{
         padding: 0;
     }
+ 
+    #contact .contact-container{
+        flex-wrap: wrap;
+    }
+    #contact .contact-container form{
+        padding-top: 0;
+    }
+    #contact .footer .container .sections{
+        flex-wrap: wrap;
+    }
+
+    #contact .contact-container{
+        width: 60%;
+    }
+    #contact .footer .container{
+        width: 70%;
+    }
 
 }
 
@@ -920,26 +946,78 @@ body{
         
     }
 
-   
-
     #services .row{
         width: 80%;
-        
+        flex-direction: column;
     }
 
     #services .row .pack {
         min-width: 300px;
+        
     }
 
-
+    #services .row .pack p{
+        padding: 1rem;
+    }
+    
     #services .row .pack .includes{
         flex-wrap: nowrap;
         flex-direction: column;
+        padding: 1rem 0;
     }
 
     #services .row .pack .includes ul{
         margin: 0 auto;
     }
+
+    #contact .contact-container{
+        flex-direction:column-reverse;
+        width: 80%;
+    }
+
+    #contact .contact-container form{
+        width: 90%;
+        padding: 4rem 0 2rem;
+    }
+
+    #contact .contact-container form div label input{
+        margin: 1rem 1rem 0;
+        
+    }
+
+
+    #contact .contact-container form button,   #contact .contact-container form div.sel{
+        margin: 1rem auto;
+    }
+
+    #contact .contact-container .contact-info{
+        padding: 1rem;
+        margin: 1rem 0 -3rem;
+        width: 80%;
+    }
+    #contact .contact-container .contact-info .info-cont{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact .contact-container .contact-info .info-cont .redes{
+        margin: 0;
+        padding: 0;
+    }
+
+    #contact .contact-container .contact-info .info-cont .redes a{
+        
+        padding: .5rem;
+    }
+    
+
+    #contact .footer .container{
+        width: 80%;
+    }
+    
+
 
 }
 
@@ -971,9 +1049,33 @@ body{
         margin: 0 0 2rem;
         
     }
+    #services .row .pack p, #services .row .pack .includes ul li {
+        font-size: 1.4rem;
+    }
+    
+    #contact .contact-container .contact-info .info-cont{
+      padding: 0;
+    }
+
+    #contact .footer .container .sections a{
+        min-width: 75px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact .footer .container{
+        width: 100%;
+    }
+    
     
 }
 
+@media (max-width: 540px) {
+    #contact .contact-container .contact-info .info-cont{
+        padding: 0;
+        flex-direction: column;
+    }
+}
 
 @media(max-width: 450px) {
     html{
@@ -1007,7 +1109,91 @@ body{
         min-width: 295px;
     }
 
-   
+    #contact .contact-container form div input{
+        width: 90%;
+        margin:0;
+        
+        font-size: 1.3rem;
+        min-height: 22.45px;
+    }
+
+    #contact .contact-container form div.sel select{
+       width: 90%;
+        font-size: 1.3rem;
+    }
+
+    #contact .contact-container form div{
+        width: 100%;
+        margin: 0;
+    }
+
+    #contact .contact-container form {
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact .contact-container form div label {
+        font-size: 1.5rem;
+    }
+    #contact .contact-container form button{
+        font-size: 1.3rem;
+        width: 60%;
+        padding: .5rem;
+    }
+
+    #contact .contact-container .contact-info h3{
+        
+        font-size: 1.8rem;
+    }
+    #contact .contact-container .contact-info .info-cont .info{
+        padding: 1rem 0;
+    }
+
+    #contact .contact-container .contact-info .info-cont .info p{
+        padding: 1rem 0;
+        font-size: 1.7rem;
+    }
+
+    #contact .contact-container .contact-info .info-cont .redes{
+        padding: 1rem 0;
+    }
+
+    #contact .footer .container .sections a{
+        min-width: 75px;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+
+    #contact .footer .container .sections{
+        padding: 0 1rem;
+    }
+
+    #contact .footer .container{
+        width: 100%;
+        flex-direction: column-reverse;
+        padding: 2rem 0;
+    }
+
+    #contact .footer .container .logo{
+        border-right: none;
+        padding: 1rem  0;
+        
+    }
+
+    #contact .footer{
+        max-height: none;
+    }
+
+    #contact .footer .container .logo h2{
+        font-size: 3rem;
+        padding: 1rem;
+    }
+
+    
+
 
 
 }
