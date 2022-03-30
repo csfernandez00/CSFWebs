@@ -1139,7 +1139,7 @@ body{
     #contact .contact-container form button{
         font-size: 1.3rem;
         width: 60%;
-        padding: .5rem;
+        padding: 1rem 0;
     }
 
     #contact .contact-container .contact-info h3{
