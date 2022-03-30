@@ -165,7 +165,7 @@ body{
 /* Home start */
 
 #home{
-    height: 100vh;
+    min-height: 100vh;
     background-image: url("img/backgr-2.png ");
     background-repeat: no-repeat;
     background-size: cover;
@@ -563,7 +563,7 @@ body{
 
 
 #contact{
-    height: 100vh;
+    min-height: 100vh;
     background-image: url("img/WhiteBG.jpg");
     display: flex;
     flex-direction: column;
@@ -876,6 +876,9 @@ body{
 
 @media(max-width: 985px) {
 
+    html {
+        font-size: 60%;
+    }
     .header nav{
         display: none ;
     }
