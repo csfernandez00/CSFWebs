@@ -590,7 +590,7 @@ body{
 }
 
 #contact .contact-container .contact-info{
-    height: 90%;
+    height: 600px;
     flex: .35 1;
     margin-left: -8rem;
     background: linear-gradient(to left, rgb(187, 27, 67) , var(--main-color));
@@ -738,12 +738,15 @@ body{
 
 #contact .footer{
     background-color: #ccc;
-    max-height: 15vh;
     z-index: 150;
     width: 100%;
-    
+    justify-content: center;
+    align-items: center;
     flex: .2 1;
+    display: flex;
+    min-height: 15vh;
 }
+
 
 #contact .footer .container{
     display: flex;
@@ -870,6 +873,7 @@ body{
     }
     #contact .footer .container{
         width: 70%;
+        
     }
 
 }
@@ -972,7 +976,8 @@ body{
     #services .row .pack .includes ul{
         margin: 0 auto;
     }
-
+    
+    
     #contact .contact-container{
         flex-direction:column-reverse;
         width: 80%;
@@ -984,7 +989,7 @@ body{
     }
 
     #contact .contact-container form div label input{
-        margin: 1rem 1rem 0;
+        margin: 1rem 2rem 0;
         
     }
 
