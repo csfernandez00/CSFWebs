@@ -1,0 +1,426 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.3s all;
+    cursor: default;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 1rem;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    min-width: 375px;
+}
+
+
+body{
+    font-family: 'lato', sans-serif;
+    background-color: var(--gr);
+}
+
+:root{
+    --gr: #e4e4e4;
+    --main-color: rgb(228, 33, 82);
+    --black: rgb(43, 43, 43);
+}
+
+.btn{
+    background-color: var(--main-color);
+    font-size: 1.3rem;
+    border-radius: 5rem;
+    border: none;
+    color: #fff;
+    box-shadow: 1px 1px 5px #555;
+    cursor: pointer;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.btn:hover{
+    background-color: #e2759a;
+}
+
+/* header start */
+
+
+.header{
+    height: 30vh;
+    background-color: transparent;
+    position: absolute;
+    display: flex;
+    background: linear-gradient(to bottom, rgb(255, 59, 108), #ff848a);
+    box-shadow: 0px 0px 20px #777;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 200;
+    min-width: 365px;
+    padding-top: 2rem;
+}
+
+
+
+.header h2.heading{
+    flex: 1 0;
+    text-align: center;
+    color: #fff;
+    font-size: 4rem;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    
+    text-transform: capitalize;
+    letter-spacing: .3rem ;
+    
+}
+
+.header nav a:hover{
+    color:#fff;
+    letter-spacing: 0.05rem;
+}
+
+.header .menu-btn{
+    flex: 0 1;
+    display: none;
+    
+}
+
+.header .menu-btn i{
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 0 0;
+}
+
+.fas.fa-bars.fa-times{
+    padding: 0;
+}
+
+.header .menu-btn i:hover{
+    color: var(--main-color);
+}
+
+.header .logo{
+    flex:0 1;
+    left: 0;
+    top: 0;
+    padding-top: 2rem;
+    position: absolute;
+
+}
+
+.header .logo a{
+    text-decoration: none;
+}
+
+.header .logo h2:hover{
+    transform: scale(1.05);
+    transition: .5s  ;
+}
+
+
+
+.header .logo h2{
+    font-size: 2rem;
+    color: var(--black);
+    padding: 0 2rem;
+    font-weight: bold;
+    
+    min-width: 199px;
+}
+
+.header .logo h2 span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+
+
+#mobile-nav{
+    background-color: #fff;
+    height: 100vh;
+    position: fixed;
+    width: 50%;
+    right: -100%;
+    z-index: 180;
+}
+
+#mobile-nav ul{
+    list-style: none;
+    text-align: center;
+    padding-top: 15vh;
+}
+
+#mobile-nav ul li{
+    padding: 1.5rem 0;
+    
+}
+
+#mobile-nav ul li a{
+    text-decoration: none;
+    color: var(--black);
+    font-size: 2rem;
+}
+
+#mobile-nav ul li:hover{
+    background-color: #eee;
+}
+
+#mobile-nav ul li:hover > a{
+    color: var(--main-color);
+}
+
+
+/*Plantillas*/
+
+.plantillas{
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.plantillas .container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background-color: #ccc;
+    z-index: 150;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 15vh;
+    
+}
+
+
+.footer .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    gap: .5rem;
+    margin: auto;
+}
+
+.footer .container .logo{
+    flex: .3 1;
+    text-align: center;
+    border-right: 1px solid #888 ;
+    height: 60%;
+    padding-top: .5rem;
+}
+
+
+.footer .container .logo h2{
+    font-size: 2rem;
+    color: var(--black);
+    padding:  0 1rem;
+    font-weight: bold;
+    bottom: 0;
+    
+    min-width: 199px;
+}
+
+
+.footer .container .logo h2 span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.footer .container .logo p{
+    padding: 0;
+    font-size: 1rem;
+
+}
+
+.footer .container .sections{
+    flex: .6 1;
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    flex-wrap: nowrap;
+}
+
+.footer .container .sections a{
+    flex: 1 1;
+    text-decoration: none;
+    text-align: center;
+    background-color: #ddd;
+    padding: .8rem  0;
+    color: var(--black);
+    border-radius: .3rem;
+    
+
+}
+
+.footer .container .sections a:hover{
+    background-color: #eee;
+}
+
+.footer .container .sections a:active{
+    background-color: #ddd;
+}
+
+
+
+
+
+
+@media(max-width: 1465px) {
+    html {
+        font-size: 75%;
+    }
+
+    .footer .container .sections{
+        flex-wrap: wrap;
+    }
+
+    .footer .container{
+        width: 70%;
+        
+    }
+
+}
+
+@media(max-width: 985px) {
+
+    html {
+        font-size: 60%;
+    }
+    .header nav{
+        display: none ;
+    }
+    .header .logo {
+        text-align: left;
+        flex: 1 0;
+        padding:0 4rem ;
+    }
+
+    .header .logo h2{
+        font-size: 3rem;
+        width: 100%;
+    }
+
+    .header .menu-btn{
+        text-align: right;
+        display: inline-block;
+        flex: 0 1;
+        padding:0 4rem ;
+    }
+
+    .header .menu-btn i{
+        font-size: 2.5rem;
+    }
+    
+
+    .footer .container{
+        width: 80%;
+    }
+    
+
+
+}
+
+
+@media(max-width: 780px) {
+
+    .header .logo {
+        max-height: 50px;
+    }
+    .header .logo h2{
+        font-size: 2.5rem;
+        width: 100%;
+    }
+    
+    
+    .footer .container .sections a{
+        min-width: 75px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer .container{
+        width: 100%;
+    }
+    
+    
+}
+
+
+
+@media(max-width: 450px) {
+    html{
+        font-size: 60%;
+    }
+
+
+    .footer .container .sections a{
+        min-width: 75px;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+
+    .footer .container .sections{
+        padding: 0 1rem;
+    }
+
+    .footer .container{
+        width: 100%;
+        flex-direction: column-reverse;
+        padding: 2rem 0;
+    }
+
+    .footer .container .logo{
+        border-right: none;
+        padding: 1rem  0;
+        
+    }
+
+    .footer{
+        max-height: none;
+    }
+
+    .footer .container .logo h2{
+        font-size: 3rem;
+        padding: 1rem;
+    }
+
+    
+
+
+
+}

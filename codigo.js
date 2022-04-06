@@ -63,21 +63,21 @@ $(function(){
         $("#btn-interm").removeClass("selected");
         $("#btn-basic").removeClass("selected");
         $(".pack").html( `
-        <h2>Paquete <span>Avanzado</span></h2>
-        <p> Estas dispuesto a llevar tu negocio al siguiente nivel? Empezá a ofrecer tu servicio a traves de de tu nuevo sitio web de modelo <b>E-Commerce</b>.</p>
+        <h2><span>E-Commerce</span></h2>
+        <p> Estas dispuesto a llevar tu negocio al siguiente nivel? Empezá a ofrecer tu servicio a traves de tu nuevo sitio web de modelo <b>E-Commerce</b>.</p>
         <h3>Incluye:</h3>
         <div class="includes">
             <ul>
-                <li>Hasta 7 secciones</li>
                 <li>Secciones a elección </li>
                 <li>Posibles revisiones:  5  </li>
                 <li>Entrega: 5 a 10 días <i>(hábiles)</i> </li>
+                <li>Formato de secciones modificable</li>
             </ul>
             <ul>
-                <li>Formato de secciones modificable</li>
                 <li>Integración de Maps</li>
                 <li>Carrito y Buscador</li>
                 <li>Pasarelas de Pago (MercadoPago)</li>
+                
             </ul>
         </div>`);
         $(".precio").html( "150 a 250");
