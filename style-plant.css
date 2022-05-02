@@ -221,7 +221,7 @@ body{
 
 .home .container div .heading{
     color: #fff;
-    font-size: 5.5rem;
+    font-size: 6rem;
     text-transform: uppercase;
     
     text-shadow: 5px 5px 0px #aaa;
@@ -229,7 +229,7 @@ body{
 
 .home .container div .heading span{
     color: #fff;
-    font-size: 6rem;
+    
     text-transform: uppercase;
     font-weight: bolder;
     text-shadow: 5px 5px 0px #aaa;
@@ -295,7 +295,7 @@ body{
 .plantillas .heading{
     display: flex;
     justify-content: space-between;
-    padding: 0rem 2rem .5rem;
+    padding: .5rem 2rem 1rem;
     border-bottom: 2px solid var(--gr);
 }
 
@@ -393,6 +393,7 @@ body{
     justify-content: space-between;
     align-items: center;
     flex: .9 1; 
+    
 }
 
 .plantillas .container-plants .grid{
@@ -454,13 +455,13 @@ body{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     width: 90%;
-    gap: 2rem;
+    gap: 3rem;
     margin: 1rem 0;
 }
 
 .plantillas .container-plants .grid .caja-plant{
     border-radius: .5rem;
-    background-color: rgba(243, 243, 243, 0.418);
+    background-color: rgba(255, 255, 255, 0.418);
     box-shadow: 0 0 20px #ddd;
     display: flex;
     flex-direction: column;
@@ -476,6 +477,8 @@ body{
     object-fit: cover;
     width: 100%;
     border-radius: .5rem .5rem 0 0;
+    box-shadow: 0 0 5px #aaa;
+    
 }
 
 .plantillas .container-plants .grid .caja-plant .plant-descrip{
@@ -485,21 +488,28 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .plantillas .container-plants .grid .caja-plant .plant-descrip h3{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: var(--black);
 }
 
+.plantillas .container-plants .grid .caja-plant .plant-descrip h3 i{
+    padding: 0 .5rem 0 0;
+    color: #ffa184 ;
+
+}
+
 .plantillas .container-plants .grid .caja-plant .plant-descrip a{
-    
+    font-size: .8rem;
     border-bottom: 4px solid #ffa184 ;
     padding: .4rem .5rem;
     border-radius: .5rem;
     color: var(--black);
     text-decoration: none;
-    box-shadow: 0 0 10px #aaa;
+    box-shadow: 0 0 5px #999;
     font-weight: bold;
 }
 
