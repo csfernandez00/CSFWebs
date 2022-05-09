@@ -684,6 +684,7 @@ body{
 #services .row .title-cont p .acl a{
     color: var(--main-color);
     font-size: .8rem;
+    cursor: pointer;
 }
 
 
