@@ -52,9 +52,10 @@ $(function(){
                 <li>Secciones a elección  </li>
                 <li>Infinitas revisiones</li>
                 <li>Entrega: 5 días hábiles </li>
+                <li>Integración redes sociales</li>
             </ul>
             <ul>
-                <li>Integración redes sociales</li>
+                
                 <li>Integración de Maps</li>
                 <li>Hosting Privado</li>
                 <li><span class="adv">Carrito y Buscador</span></li>

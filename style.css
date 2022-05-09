@@ -248,9 +248,7 @@ body{
     font-size: 4.5rem;
     color: var(--black);
     z-index: 150;
-    text-transform: capitalize;
     animation: load-title 1s ease-out;
-   
     min-width: 540px;
 }
 
