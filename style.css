@@ -683,7 +683,7 @@ body{
 }
 
 
-#services .row .title-cont p .acl{
+#services .row .title-cont p .acl a{
     color: var(--main-color);
     font-size: .8rem;
 }
@@ -1192,6 +1192,12 @@ body{
 
     #about .row{
         flex-direction: column;
+        padding-top: 5rem;
+    }
+
+    #about .row .card.one, #about .row .card.three
+    {
+        padding-top: 0rem;
     }
 
     #about .row .card{
@@ -1210,10 +1216,17 @@ body{
     #services .row .pack p, #services .row .pack .includes ul li {
         font-size: 1.4rem;
     }
-    
-    #contact .contact-container .contact-info .info-cont{
-      padding: 0;
+    #contact .contact-container form div label, #contact .contact-container form div label input,  #contact .contact-container form div label select#select-service, #contact .contact-container form div label select#select-service option{
+        font-size: 1.6rem;
     }
+
+    #contact .contact-container .contact-info .info-cont{
+        padding: 0;
+    }
+    #contact .contact-container .contact-info h3, #contact .contact-container .contact-info .info-cont .info p{
+        font-size: 1.8rem;
+    }
+
 
     #contact .footer .container .sections a{
         min-width: 75px;
@@ -1238,7 +1251,9 @@ body{
     html{
         font-size: 60%;
     }
-    
+    .home{
+        margin-bottom: 0;
+    }
     .home .container{
         width: 100%;
         padding-left: 2rem;
@@ -1292,14 +1307,25 @@ body{
 
     #contact .contact-container form div input{
         width: 90%;
-        margin:0;
+        margin: 0;
         
         font-size: 1.3rem;
         min-height: 22.45px;
     }
 
+    #contact .contact-container form div input#inp-mail{
+        margin-top: 3rem;
+    }
+
+    #contact .contact-container form div input#inp-name{
+        margin-top: 2rem;
+    }
+    #contact .contact-container form div.sel{
+        margin: 2rem 0;
+    }
+
     #contact .contact-container form div.sel select{
-       width: 90%;
+        width: 90%;
         font-size: 1.3rem;
     }
 
