@@ -36,7 +36,7 @@ body{
 
 :root{
     --gr: #e4e4e4;
-    --main-color: rgb(228, 33, 82);
+    --main-color: #f84e82;
     --black: rgb(43, 43, 43);
 }
 
@@ -478,7 +478,6 @@ body{
     width: 100%;
     border-radius: .5rem .5rem 0 0;
     box-shadow: 0 0 5px #aaa;
-    
 }
 
 .plantillas .container-plants .grid .caja-plant .plant-descrip{
@@ -488,7 +487,6 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .plantillas .container-plants .grid .caja-plant .plant-descrip h3{
@@ -499,7 +497,6 @@ body{
 .plantillas .container-plants .grid .caja-plant .plant-descrip h3 i{
     padding: 0 .5rem 0 0;
     color: #ffa184 ;
-
 }
 
 .plantillas .container-plants .grid .caja-plant .plant-descrip a{

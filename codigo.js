@@ -9,7 +9,11 @@ $(function(){
         $("#mobile-nav").removeClass("active"); 
     }
     $(".fa-bars").click(openMobileMenu);
-    $("#mobile-a1, #mobile-a2, #mobile-a3, #mobile-a4, .fa-times").click(closeMobileMenu);
+    $("#mobile-a1, #mobile-a2, #mobile-a3, #mobile-a4, #mobile-a5, .fa-times").click(closeMobileMenu);
+
+
+
+    
     $("#btn-basic").click(()=>{
         $("#btn-basic").addClass("selected");
         $("#btn-interm").removeClass("selected");
@@ -64,7 +68,7 @@ $(function(){
         $("#btn-basic").removeClass("selected");
         $(".pack").html( `
         <h2><span>E-Commerce</span></h2>
-        <p> Estas dispuesto a llevar tu negocio al siguiente nivel? Empezá a ofrecer tu servicio a traves de tu nuevo sitio web de modelo <b>E-Commerce</b>.</p>
+        <p> Estas dispuesto a llevar tu negocio al siguiente nivel? Empezá a ofrecer tus productos y/o servicio a traves de tu nuevo sitio web de modelo <b>E-Commerce</b>.</p>
         <h3>Incluye:</h3>
         <div class="includes">
             <ul>
