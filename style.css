@@ -370,6 +370,7 @@ body{
     text-align: center;
     height: 50%;
     flex-direction: row;
+    overflow-x: hidden;
 }
 
 #about .row .card{
