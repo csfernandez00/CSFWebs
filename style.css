@@ -221,6 +221,7 @@ body{
     margin-bottom: 20vh;
     margin-top: -10vh;
     display: flex;
+    overflow-x: hidden;
 }
 
 .home .container{
