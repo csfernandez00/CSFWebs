@@ -222,6 +222,7 @@ body{
     margin-top: -10vh;
     display: flex;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .home .container{
@@ -231,7 +232,7 @@ body{
     flex-direction: row;
     margin-top: 10vh;
     width: 100%;
-    
+
 }
 
 
@@ -372,6 +373,7 @@ body{
     height: 50%;
     flex-direction: row;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 #about .row .card{
