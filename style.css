@@ -30,6 +30,7 @@ html{
 body{
     font-family: 'Zen Kaku Gothic New', sans-serif;
     background-color: #fff;
+    overflow-x: hidden;
 }
 
 :root{
@@ -49,6 +50,7 @@ body{
     font-size: 1.5rem;
     box-shadow: 0 0 5px #f84e81bd, inset 0 0 5px #f84e81bd;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -82,7 +84,8 @@ body{
     text-decoration: none;
     padding: 1rem 3rem;
     z-index: 200;
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
 }
 
 
@@ -174,6 +177,72 @@ body{
     color: var(--main-color);
 }
 
+.btn-wpp{
+    position: fixed;
+    width: 4.2rem;
+    height: 4.2rem;
+    bottom: 2%;
+    right: 1%;
+    background-color: rgb(37, 211, 102);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 500;
+}
+
+.btn-wpp a{
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    z-index: 200;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.btn-wpp::before{
+    content: "Ayuda?";
+    color: var(--black);
+    margin-right: 11rem;
+    font-size: 1.1rem;
+    position: relative;
+    background-color: #fff;
+    padding: .5rem 1.2rem;
+    border-radius: 1rem;
+    animation: help 20s linear infinite;
+    z-index: -500;
+    transition: 0.3s;
+    border: 1px solid #555;
+}
+
+.btn-wpp a:hover {
+    color: var(--black);
+    transition: 0.3s;
+}
+
+@keyframes help {
+    0%{
+        opacity: 0%;
+    }
+    59%{
+        opacity: 0%;
+    }
+    60%{
+        opacity: 100%;
+    }
+
+    98%{
+        opacity: 100%;
+    }
+
+    100%{
+        opacity: 0%;
+    }
+}
+
+
 
 
 /*-************************HOME**************************-*/
@@ -210,7 +279,7 @@ body{
     background-origin: center;
     background-size: 100%;
     background-position-y: 0%;
-    
+    box-shadow: inset 0px 0 400px #000;
 }
 
 #home{
@@ -232,7 +301,7 @@ body{
     flex-direction: row;
     margin-top: 10vh;
     width: 100%;
-
+    margin-left: 3rem;
 }
 
 
@@ -257,7 +326,7 @@ body{
 .home .container .title h1 span{
     color: var(--main-color);
     text-transform: uppercase;
-    font-size: 5rem;
+    font-size: 4.2rem;
     
 }
 
@@ -941,6 +1010,7 @@ body{
     }
     .home .container{
         gap: 10rem;
+        margin-left: 0rem;
     }
     .home .container .img{
         
@@ -1150,11 +1220,12 @@ body{
         height: 100vh;
         justify-content: center;
         background: linear-gradient(to bottom, rgba(221, 221, 221, 0.418), #fff) ;
+        
     }
     .background{
         
         background-position-y: 20%;
-        
+        box-shadow: none;
     }
     .home .container .img{
         display: none;
@@ -1240,7 +1311,18 @@ body{
     #contact .footer .container{
         width: 100%;
     }
-    
+    .btn-wpp{
+        width: 5rem;
+        height: 5rem;
+    }
+    .btn-wpp a{
+        font-size: 2.7rem;
+    }
+
+    .btn-wpp::before{
+        font-size: 1.7rem;
+        margin-right: 15rem;
+    }
 }
 
 @media (max-width: 540px) {
