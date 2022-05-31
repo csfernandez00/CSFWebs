@@ -938,11 +938,13 @@ body{
     border: none;
     box-shadow: 0 2px 2px #555;
     color: #fff;
+    transition: .3s;
 }
 
 #contact .contact-container form button:hover{
     box-shadow: 0 2px 2px #555, inset 0 0 30px rgba(221, 221, 221, 0.658);
     letter-spacing: .01rem;
+    transition: .3s;
 }
 
 #contact .footer{
