@@ -1,15 +1,12 @@
 $(function(){
     const openMobileMenu = ()=>{
-        $("#btn-menu").toggleClass("fa-times");
         $("#mobile-nav").toggleClass("active");
     }
     const closeMobileMenu = ()=>{
-        $("#btn-menu").addClass("fa-bars");
-        $("#btn-menu").removeClass("fa-times");
         $("#mobile-nav").removeClass("active"); 
     }
     $(".fa-bars").click(openMobileMenu);
-    $("#mobile-a1, #mobile-a2, #mobile-a3, #mobile-a4, #mobile-a5, .fa-times").click(closeMobileMenu);
+    $("#mobile-a1, #mobile-a2, #mobile-a3, #mobile-a4, #mobile-a5, #close-mobile-nav").click(closeMobileMenu);
 
 
 
