@@ -1,21 +1,20 @@
-$(function(){
-    const openMobileMenu = ()=>{
-        $("#mobile-nav").toggleClass("active");
-    }
-    const closeMobileMenu = ()=>{
-        $("#mobile-nav").removeClass("active"); 
-    }
-    $(".fa-bars").click(openMobileMenu);
-    $("#mobile-a1, #mobile-a2, #mobile-a3, #mobile-a4, #mobile-a5, #close-mobile-nav").click(closeMobileMenu);
+$(function () {
+	const openMobileMenu = () => {
+		$("#mobile-nav").toggleClass("active");
+	};
+	const closeMobileMenu = () => {
+		$("#mobile-nav").removeClass("active");
+	};
+	$(".fa-bars").click(openMobileMenu);
+	$(
+		"#mobile-a1, #mobile-a2, #mobile-a3, #mobile-a4, #mobile-a5, #close-mobile-nav"
+	).click(closeMobileMenu);
 
-
-
-    
-    $("#btn-basic").click(()=>{
-        $("#btn-basic").addClass("selected");
-        $("#btn-interm").removeClass("selected");
-        $("#btn-advanc").removeClass("selected");
-        $(".pack").html(`
+	$("#btn-basic").click(() => {
+		$("#btn-basic").addClass("selected");
+		$("#btn-interm").removeClass("selected");
+		$("#btn-advanc").removeClass("selected");
+		$(".pack").html(`
         <h2>Paquete <span>Basico</span></h2>
         <p>Ideal para aquellas empresas que acaban de empezar y quieren crecer rápidamente. Elegí una de nuestras plantillas y obtene tu sitio en tan solo 5 días.</p>
         <h3>Incluye:</h3>
@@ -34,13 +33,12 @@ $(function(){
                 <li><span class="adv">Pasarelas de Pago (MercadoPago)</span></li>
             </ul>
         </div>`);
-        $(".precio").html("$1500");
-    });
-    $("#btn-interm").click(()=>{
-        $("#btn-interm").addClass("selected");
-        $("#btn-basic").removeClass("selected");
-        $("#btn-advanc").removeClass("selected");
-        $(".pack").html( `
+	});
+	$("#btn-interm").click(() => {
+		$("#btn-interm").addClass("selected");
+		$("#btn-basic").removeClass("selected");
+		$("#btn-advanc").removeClass("selected");
+		$(".pack").html(`
         <h2>Paquete <span>Personalizado</span></h2>
         <p> Tenes una idea para tu sitio web y no sabes como armarlo? Nosotros te lo creamos totalmente personalizado a tu manera.</p>
         <h3>Incluye:</h3>
@@ -59,13 +57,12 @@ $(function(){
                 <li><span class="adv">Pasarelas de Pago (MercadoPago)</span></li>
             </ul>
         </div>`);
-        $(".precio").html("$2000");
-    });
-    $("#btn-advanc").click(()=>{
-        $("#btn-advanc").addClass("selected");
-        $("#btn-interm").removeClass("selected");
-        $("#btn-basic").removeClass("selected");
-        $(".pack").html( `
+	});
+	$("#btn-advanc").click(() => {
+		$("#btn-advanc").addClass("selected");
+		$("#btn-interm").removeClass("selected");
+		$("#btn-basic").removeClass("selected");
+		$(".pack").html(`
         <h2>Modelo <span>E-Commerce</span></h2>
         <p> Estas dispuesto a llevar tu negocio al siguiente nivel? Empezá a ofrecer tus productos y/o servicio a traves de tu nuevo sitio web de modelo <b>E-Commerce</b>.</p>
         <h3>Incluye:</h3>
@@ -84,14 +81,5 @@ $(function(){
                 
             </ul>
         </div>`);
-        $(".precio").html( "$2500");
-    });
+	});
 });
-
-
-
-
-
-
-
-
